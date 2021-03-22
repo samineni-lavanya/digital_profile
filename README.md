@@ -12,8 +12,21 @@
 1. Item 1
 2. Item 2
 3. Item 3
-4. * Item 3a
-5. * Item 3b
+ * Item 3a
+ * Item 3b
+ 
+![GitHub Logo](/images/logo.png)
+Format:![Alt Text](url)
+
+http://github.com - automatic!
+[GitHub](http://github.com)
+
+First Header | Second Header
+------------ | -------------
+Content cell 1 | Content cell 2
+Content coloumn 1 | Content coloumn 2
+
+
 
 
 
