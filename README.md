@@ -26,6 +26,10 @@ First Header | Second Header
 Content cell 1 | Content cell 2
 Content coloumn 1 | Content coloumn 2
 
+GitHub supports emoji!
+:+1: :sparkless: :camel: :smile:
+
+
 
 
 
