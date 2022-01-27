@@ -1,0 +1,182 @@
+<!doctype html>
+ <head>
+ <title> checkoutform</title>
+ <style>
+ body {
+    font-family: 'Roboto', sans-serif!important;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.mainscreen
+{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    background-color: #ddf0e2;
+    color:#54524c;
+}
+
+.card {
+	width: 55rem;
+    margin: auto;
+    background: white;
+    position:center;
+    align-self: center;
+    top: 20rem;
+    border-radius: 1.5rem;
+    box-shadow: 4px 3px 20px #3535358c;
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.leftside {
+	background: #c4bcaf;
+	width: 25rem;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.product {
+    object-fit: cover;
+	width: 20em;
+    height: 20em;
+    border-radius: 80%;
+}
+
+.rightside {
+    background-color: #ffffff;
+	width: 35rem;
+	border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 1rem 2rem 3rem 3rem;
+}
+
+p{
+    display:block;
+    font-size: 1.1rem;
+    font-weight: 70;
+    margin: .8rem 0;
+}
+
+.inputbox
+{
+    color:#030303;
+	width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #615a5a;
+    font-size: 1.1rem;
+    font-weight: 70;
+  outline:none;
+}
+
+.expcvv {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 0.6rem;
+}
+
+.expcvv_text{
+    padding-right: 1rem;
+}
+.expcvv_text2{
+    padding:0 1rem;
+}
+
+.button{
+    background: #86c29e;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width:70%;
+    letter-spacing: .11rem;
+    outline:none;
+}
+
+.button:hover
+{
+	transform: scale(1.05) translateY(-3px);
+    box-shadow: 3px 3px 6px #38373785;
+}
+
+@media only screen and (max-width: 500px) {
+    .card{
+        flex-direction: column;
+        width: auto;
+      
+    }
+
+    .leftside{
+        width: 30%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+      border-top-right-radius:0;
+      border-radius:0;
+    }
+
+    .rightside{
+        width:auto;
+        border-bottom-left-radius: 1.5rem;
+        padding:0.5rem 3rem 3rem 2rem;
+      border-radius:0;
+    }
+}
+ </style>
+ </head>
+ <body>
+ 
+ <div class="mainscreen">
+             
+		 <div class="card">
+        <div class="leftside">
+          <img
+            src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/a22vhyqn7grw5sy2da2x"
+            class="product"
+            alt="Shoes"
+          />
+        </div>
+        <div class="rightside">
+          <form  action="Index.html">
+            <h1>FEEDBACK</h1>
+             <hr>
+			<p>Name</p>
+			 <input type="text" class="inputbox" name="address" required />
+			<p>Email Address</p>
+			 <input type="text" class="inputbox" name="amount" required />
+            <p>Mobile Number</p>
+            <input type="text" class="inputbox" name="name" required />
+            <p>Your Experience</p>
+            <select class="inputbox" name="card_type" id="card_type" required>
+              <option value="">--Select any option--</option>
+              <option value="Excellent">Excellent</option>
+              <option value="Good">Good</option>
+              <option value="Not Satisfied">Not Satisfied</option>
+            </select>
+            <p></p>
+			<button type="submit" class="button" onclick="test()">Submit</button>
+		<script type="text/javascript">
+function test(){
+alert ("Thanks For Your Feedback 😊😊");
+}
+</script>
+          </form>
+        </div>
+      </div>
+    </div>
+	</body>
+  
